@@ -5,21 +5,21 @@
 class Sshbuddy < Formula
   desc "A beautiful TUI app to manage SSH connections"
   homepage "https://github.com/javedh-dev/sshbuddy"
-  version "0.1.0"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/javedh-dev/sshuddy/releases/download/v0.1.0/sshuddy_Darwin_x86_64.tar.gz"
-      sha256 "928be70765fac1bcc49ee8e236172d2fadfd21b290b03c7f4785e57fbc3614d1"
+      url "https://github.com/javedh-dev/sshuddy/releases/download/v0.1.2/sshuddy_Darwin_x86_64.tar.gz"
+      sha256 "46367dbea89e584bd9f2ce08f7800f7b301d0d31ebec3342300b9e237c55a284"
 
       def install
         bin.install "sshbuddy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/javedh-dev/sshuddy/releases/download/v0.1.0/sshuddy_Darwin_arm64.tar.gz"
-      sha256 "034114610abd0d00b6bf98d35eac7f2de92f9863fad7869e258d7e1a2a0bcc74"
+      url "https://github.com/javedh-dev/sshuddy/releases/download/v0.1.2/sshuddy_Darwin_arm64.tar.gz"
+      sha256 "c03c07807fd2feb3fcab2007acb56e97fba19d5099bea5aa6a7950ba1d335ad7"
 
       def install
         bin.install "sshbuddy"
@@ -29,15 +29,15 @@ class Sshbuddy < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/javedh-dev/sshuddy/releases/download/v0.1.0/sshuddy_Linux_x86_64.tar.gz"
-      sha256 "6175111f82fa7ab849c642aac448701bb1eda2cde3ac093951377a5e214b43bf"
+      url "https://github.com/javedh-dev/sshuddy/releases/download/v0.1.2/sshuddy_Linux_x86_64.tar.gz"
+      sha256 "be6242c1904b5f7e93406b430f7282ef20fcce3685522b2078ae894023cb978a"
       def install
         bin.install "sshbuddy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/javedh-dev/sshuddy/releases/download/v0.1.0/sshuddy_Linux_arm64.tar.gz"
-      sha256 "76227ad42d73aa7e6cdfc6e504b5a8abf4ea7da83ddf7b74af3f2dd921f70e70"
+      url "https://github.com/javedh-dev/sshuddy/releases/download/v0.1.2/sshuddy_Linux_arm64.tar.gz"
+      sha256 "68eed308653d8f916dba1e5bda0a5f0be7967426c1ebff43e1ac5524ba280bc2"
       def install
         bin.install "sshbuddy"
       end
