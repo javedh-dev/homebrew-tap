@@ -3,7 +3,7 @@ cask "sshbuddy" do
   name "sshbuddy"
   desc "A modern terminal interface for managing SSH connections"
   homepage "https://github.com/javedh-dev/sshbuddy"
-  version "0.1.7"
+  version "0.1.8"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "sshbuddy" do
   on_macos do
     on_intel do
       url "https://github.com/javedh-dev/sshbuddy/releases/download/v#{version}/sshbuddy_Darwin_x86_64.tar.gz"
-      sha256 "dde0aac055c47e033573b300840846fccd32db6bc264a6a84c60113fb057c433"
+      sha256 "5e519d94271557a46d4127a96fb79912087534434e74810dbc2528da018a20de"
     end
     on_arm do
       url "https://github.com/javedh-dev/sshbuddy/releases/download/v#{version}/sshbuddy_Darwin_arm64.tar.gz"
-      sha256 "8f6df85bcdf644a6b7d2b09a7464448bb281dd3d735afe306c61a261bc26c6ea"
+      sha256 "6398faf644ae877b3cbf1ebb14471d222437336c41a2191baacbbf3aac98d3e6"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/javedh-dev/sshbuddy/releases/download/v#{version}/sshbuddy_Linux_x86_64.tar.gz"
-      sha256 "3d6125d03771dd02c7cb05f08e07a8a521258fa22064b7890558f8a32510297e"
+      sha256 "998c24ab2691a7e0c7531ef8cebd985369c03e4a01da7fd518ac9bdfeb8affdf"
     end
     on_arm do
       url "https://github.com/javedh-dev/sshbuddy/releases/download/v#{version}/sshbuddy_Linux_arm64.tar.gz"
-      sha256 "aa293a586bdbc1fbf4777a04eae005eaf5470316df2dd8bc4b94bd78124f5be6"
+      sha256 "7f22c286dcb1d1cfc789c09d92709a8af15af71feabac982b897eab7cb5e234c"
     end
   end
 
