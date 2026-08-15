@@ -17,5 +17,10 @@ cask "stick-lm" do
 
   binary "stick-lm"
 
+  postflight do
+    system_command "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "#{staged_path}/stick-lm"],
+                                      sudo: false, must_succeed: false
+  end
+
   # No zap stanza required
 end
