@@ -1,6 +1,6 @@
 cask "scalebar" do
-  version "1.1.3"
-  sha256 "0304f4a2d131f96e3e36874eda942ff40831f4f1dbd1369eed47c12ad46e8f9b"
+  version "1.2.0"
+  sha256 "e1b3114f08c976a80eacbb615f20650a6639de8d7cd5495fe9f1b0c63c0068f2"
 
   url "https://github.com/javedh-dev/ScaleBar/releases/download/v#{version}/ScaleBar-#{version}.zip"
   name "ScaleBar"
